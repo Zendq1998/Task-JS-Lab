@@ -1,0 +1,25 @@
+<script>
+var Vector = function(x,y){
+	this.x = x;
+	this.y = y;
+}
+Vector.prototype.plus = function(Vector){
+	this.x+=Vector.x;
+	this.y+=Vector.y;
+	return this;
+}
+Vector.prototype.minus = function(Vector){
+	this.x-=Vector.x;
+	this.y-=Vector.y;
+	return this;
+}
+
+
+var Vector1 = new Vector(1,2);
+var Vector2 = new Vector(2,3);
+
+console.log(Vector1.plus(Vector2));
+
+
+
+</script>

@@ -1,0 +1,12 @@
+<script>
+var Person = function(name,age){
+	this.name = name;
+	this.age = age;
+	this.introduce = function(){
+		console.log("I am "+this.name+", I am "+this.age+" years old!");
+	}
+}//定义构造函数（使用这个构造函数新创建的对象包含name和age属性和introduce方法，this指向新创建的对象）
+
+var jerry = new Person("Jerry",2);
+jerry.introduce();
+</script>
